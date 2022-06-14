@@ -1,149 +1,153 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Dashboard Template · Bootstrap v5.0</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Dashboard Template · Bootstrap v5.0</title>
 
-    
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-  </head>
-  <body>
- 
-<!-- Header -->    
-<header class="navbar navbar-dark sticky-top bg-success flex-md-nowrap py-2 shadow">
-  <div class="text-center ms-4">
-    <img class="img-fluid" src="../assets/imgs/logo-REDI2.png" width="115" height="115" alt="Logoredi">
-  </div>
-  <div class="flex-shrink-0 dropdown ms-auto me-5 px-5">
-    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
-      data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-    </a>
-    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-      <li><a class="dropdown-item" href="#">Pefil</a></li>
-      <li><a class="dropdown-item" href="#">Descargas</a></li>
-      <li><a class="dropdown-item" href="#">Recursos compartidos</a></li>
-      <li><a class="dropdown-item" href="#">Mis recursos</a></li>
-      <li>
-        <hr class="dropdown-divider">
-      </li>
-      <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
-    </ul>
-  </div>
-</header>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
 
-<div class="container-fluid mt-3">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              Inicio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Descargar recurso
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Compartir recurso
-            </a>
-          </li>
-        </ul>
-      </div>
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-dark sticky-top bg-success flex-md-nowrap py-2 shadow">
+    <div class="text-center ms-4">
+      <img class="img-fluid" src="../assets/imgs/logo-REDI2.png" width="115" height="115" alt="Logoredi">
+    </div>
+    <div class="flex-shrink-0 dropdown ms-auto me-5 px-5">
+      <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Pefil</a></li>
+        <li><a class="dropdown-item" href="#">Descargas</a></li>
+        <li><a class="dropdown-item" href="#">Recursos compartidos</a></li>
+        <li><a class="dropdown-item" href="#">Mis recursos</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <span data-feather="home"></span>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Descargar recurso
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="users"></span>
+                Compartir recurso
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
   </div>
 
-    </nav>
-<!-- /Header -->
-    
-<!-- Main -->    
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-3">
-      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start"></div>
-      <div  class="container-fluid d-grid gap-3 justify-content-between" style="grid-template-columns: 1fr 2fr;">
-        <div class="dropdown ms-auto">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <label class="mt-2" for="action">Recursos</label>
-          </a>
-          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
-            <li><a class="dropdown-item" href="#" aria-current="page">Vídeos</a></li>
-            <li><a class="dropdown-item" href="#" aria-current="page">Sonidos</a></li>
-            <li><a class="dropdown-item" href="#" aria-current="page">Imágenes</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Todo</a></li>
-          </ul>
-        </div>
-        <div class="d-flex align-items-center">
-          <form class="w-50 me-3">
-            <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
-          </form>
-          <div class="col-md-3 text-start">
-            <button type="button" class="btn btn-primary">Buscar</button>
-          </div>
+  </nav>
+  <!-- /Header -->
+
+  <!-- Main -->
+  <main class="col-md-9 ms-sm-auto col-lg-10 px-md-3">
+    <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start"></div>
+    <div class="container-fluid d-grid gap-3 justify-content-between" style="grid-template-columns: 1fr 2fr;">
+      <div class="dropdown ms-auto">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <label class="mt-2" for="action">Recursos</label>
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+          <li><a class="dropdown-item" href="#" aria-current="page">Vídeos</a></li>
+          <li><a class="dropdown-item" href="#" aria-current="page">Sonidos</a></li>
+          <li><a class="dropdown-item" href="#" aria-current="page">Imágenes</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Todo</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <form class="w-50 me-3">
+          <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
+        </form>
+        <div class="col-md-3 text-start">
+          <button type="button" class="btn btn-primary">Buscar</button>
         </div>
       </div>
+    </div>
 
-      <!-- Main-grid -->
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-2 pb-2 mb-3 border-bottom mt-3 border-top">
-        <h6>Imágenes / Tecnología <br>35 resultados | Imágenes de archico con derechos de autor* </h6> 
-        <div class="dropdown ms-auto me-3">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <label for="action">Ordenar por: <Label class="fw-bold">Popularidad</Label></label>
-          </a>
-          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
-            <li><a class="dropdown-item" href="#" aria-current="page">Recientes</a></li>
-            <li><a class="dropdown-item" href="#" aria-current="page">Fecha subida</a></li>
-            <li><a class="dropdown-item" href="#" aria-current="page">Nombre: Ascendente</a></li>
-            <li><a class="dropdown-item" href="#" aria-current="page">Nombre: Descendente</a></li>
-          </ul>
-        </div>
+    <!-- Main-grid -->
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-2 pb-2 mb-3 border-bottom mt-3 border-top">
+      <h6 class="text-">Imágenes / Tecnología <br>35 resultados | Imágenes de archico con derechos de autor*
+      </h6>
+      <div class="dropdown ms-auto me-3">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <label for="action">Ordenar por: <Label class="fw-bold">Popularidad</Label></label>
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+          <li><a class="dropdown-item" href="#" aria-current="page">Recientes</a></li>
+          <li><a class="dropdown-item" href="#" aria-current="page">Fecha subida</a></li>
+          <li><a class="dropdown-item" href="#" aria-current="page">Nombre: Ascendente</a></li>
+          <li><a class="dropdown-item" href="#" aria-current="page">Nombre: Descendente</a></li>
+        </ul>
       </div>
+    </div>
 
-      <h5>Imágenes</h5>
+    <h5>Imágenes</h5>
 
-      <section id="speakers" class="mt-4">
-        <div class="container">
-          <div class="row">
-            <div class="col col-md-6 col-lg-4 mb-4">
-              <div class="card">
-              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
+    <section id="speakers" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
               <div class="card-body">
                 <h6 class="card-title mb-4">Amelia Belmonte</h6>
                 <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
@@ -153,59 +157,66 @@
           </div>
           <div class="col col-md-6 col-lg-4 mb-4">
             <div class="card">
-            <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
-            <div class="card-body">
-              <h6 class="card-title mb-4">Gaspar Muñoz</h6>
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
+              <div class="card-body">
+                <h6 class="card-title mb-4">Gaspar Muñoz</h6>
                 <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
                 <a href="#" class="btn btn-danger">Favorita</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-md-6 col-lg-4 mb-4">
-          <div class="card">
-          <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
-          <div class="card-body">
-            <h6 class="card-title mb-4">Angel Villanueva</h6>
-              <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
-              <a href="#" class="btn btn-danger">Favorita</a>
+          <div class="col col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
+              <div class="card-body">
+                <h6 class="card-title mb-4">Angel Villanueva</h6>
+                <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
+                <a href="#" class="btn btn-danger">Favorita</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col col-md-6 col-lg-4 mb-4">
-        <div class="card">
-        <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
-        <div class="card-body">
-          <h6 class="card-title mb-4">Christian Van Der H.</h6>
-            <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
-            <a href="#" class="btn btn-danger">Favorita</a>
-        </div>
-        </div>
-      </div>
-      <div class="col col-md-6 col-lg-4 mb-4">
-        <div class="card">
-        <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
-        <div class="card-body">
-          <h6 class="card-title mb-4">Andrés Lora</h6>
-            <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
-            <a href="#" class="btn btn-danger">Favorita</a>
-        </div>
-        </div>
-      </div>
-      <div class="col col-md-6 col-lg-4 mb-4">
-        <div class="card">
-        <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha"/>
-        <div class="card-body">
-          <h6 class="card-title mb-4">Sheila Talavera</h6>
-            <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
-            <a href="#" class="btn btn-danger">Favorita</a>
-        </div>
-      </div>
-        </div>
-      </section>
-      <!-- /Main-grid -->
-    </main>
-<!-- /Main -->
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
-  </body>
+          <div class="col col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
+              <div class="card-body">
+                <h6 class="card-title mb-4">Christian Van Der H.</h6>
+                <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
+                <a href="#" class="btn btn-danger">Favorita</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
+              <div class="card-body">
+                <h6 class="card-title mb-4">Andrés Lora</h6>
+                <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
+                <a href="#" class="btn btn-danger">Favorita</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="../assets/imgs/fondo.jpg" alt="sacha" />
+              <div class="card-body">
+                <h6 class="card-title mb-4">Sheila Talavera</h6>
+                <a href="descargarImg.html" class="btn btn-primary me-2">Descargar</a>
+                <a href="#" class="btn btn-danger">Favorita</a>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- /Main-grid -->
+  </main>
+  <!-- /Main -->
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+    integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+    crossorigin="anonymous"></script>
+  <script src="dashboard.js"></script>
+</body>
+
 </html>
