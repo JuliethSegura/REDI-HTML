@@ -1,0 +1,6 @@
+
+.bg{
+    background-image: url('../assets/imgs/fondo.jpg');
+    background-position: center center;
+    background-size: contain;
+}
