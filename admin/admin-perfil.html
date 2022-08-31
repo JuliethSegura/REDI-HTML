@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Perfil Template · Bootstrap v5.0</title>
+  <title>Perfil Administrador</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
@@ -31,7 +31,7 @@
     }
   </style>
   <!-- Custom styles for this template -->
-  <link href="dashboard.css" rel="stylesheet">
+  <link href="../dashboard/dashboard.css" rel="stylesheet">
 
 </head>
 
@@ -42,63 +42,67 @@
       <img class="img-fluid" src="../assets/imgs/logo-REDI2.png" width="115" height="115" alt="Logoredi">
     </div>
     <div class="flex-shrink-0 dropdown ms-auto me-5 px-5">
-        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-        </a>
-        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-          <li><a class="dropdown-item" href="#">Usuario</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="User-Perfil.html">Perfil</a></li>
-          <li><a class="dropdown-item" href="dowloand-User.html">Descargas</a></li>
-          <li><a class="dropdown-item" href="User-compartir.html">Recursos compartidos</a></li>
-          <li><a class="dropdown-item" href="User-Recursos.html">Mis recursos</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="../inicio.html">Cerrar Sesión</a></li>
-        </ul>
-      </div>
+      <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Administrador</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="../inicio-sesion/inicio.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
   </header>
 
+  <!-- menu lateral -->
   <div class="container-fluid mt-3">
     <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-          <div class="position-sticky pt-3">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">
-                  <span data-feather="home"></span>
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="descargarImg.html">
-                  <span data-feather="file"></span>
-                  Descargar recurso
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Compartir-recur.html">
-                  <span data-feather="users"></span>
-                  Compartir recurso
-                </a>
-              </li>
-            </ul>
-          </div>
-      </div>
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../admin/admin.html">
+                <span data-feather="home"></span>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../admin/lista-user.html">
+                <span data-feather="users"></span>
+                Usuarios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../admin/lista-solicitud.html">
+                <span data-feather="file"></span>
+                Solicitudes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../admin/admin-recursos.html">
+                <span data-feather="file"></span>
+                Administrar recursos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
-  </nav>
   <!-- /Header -->
 
   <!-- Main -->
   <main class="col-md-9 ms-sm-auto col-lg-10 px-md-3">
-    <h5 class="mt-3 border-bottom border-2">Perfil usuario</h5>
+    <h5 class="mt-3 border-bottom border-2">Perfil Administrador</h5>
     <div id="main-imagen" class="row featurette mt-5">
       <div class="col-md-6 order-md-2 border-bottom border-top border-start border-end border-5">
-        <h5 class="text-muted">INFORMACION DEL USUARIO</h5>
+        <h5 class="text-muted">INFORMACION DEL ADMINISTRADOR</h5>
         <h5>Aspectos Generales</h5>
         <p class="lead">Nombre: Gaspar</p>
         <p class="lead">Apellido: <a href="#">Muñoz Orozco</a></p>
@@ -115,7 +119,7 @@
     </div>
   </main>
   <!-- /Main -->
-  
+
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
